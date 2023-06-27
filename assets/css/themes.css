@@ -1,0 +1,106 @@
+/* Themes
+-----------------------------------------------------------------*/
+
+/* Short code
+-----------------------------------------------------------------*/
+
+.br-40{
+    border-radius: 40px;
+}
+
+/* Components code
+-----------------------------------------------------------------*/
+
+.video-container {
+    overflow: hidden;
+    min-height: 400px;
+    height: 95vh;
+    width: 100%;
+    position: relative;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.video-container videdotlottie-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.lottie-bg {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    top: 0;
+    clip: rect(auto, auto, 90vh, auto);
+}
+
+/* Tap Beat
+-----------------------------------------------------------------*/
+.tapbeat-main-bg {
+    background-color: #01051A;
+}
+
+.call-action-img .tapbeat-sec-bg::after {
+    background: #00072D;
+}
+
+
+.tapbeat-loader-bg {
+    fill: #00072D !important;
+}
+
+.tapbeat-bord-white{
+    border: 6px solid #ffffff;
+}
+
+.test{
+    width: 100%;
+    top: 0;
+    clip: rect(auto, auto, 98vh, auto);
+}
+
+
+
+
+
+
+
+
+
+/* ====================== [ Start Responsive ] ====================== */
+
+
+@media screen and (max-width: 1300px) {
+    .lottie-bg {
+        width: 120%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .lottie-bg {
+        width: 160%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .lottie-bg {
+        width: 240%;
+    }
+}
