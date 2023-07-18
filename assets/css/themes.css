@@ -70,13 +70,22 @@
     border: 6px solid #ffffff;
 }
 
-.test{
-    width: 100%;
-    top: 0;
-    clip: rect(auto, auto, 98vh, auto);
+
+
+/* Alias
+-----------------------------------------------------------------*/
+.alias-main-bg {
+    background-color: #6E0327;
+}
+
+.call-action-img .alias-sec-bg::after {
+    background: #BA1945;
 }
 
 
+.alias-loader-bg {
+    fill: #6E0327 !important;
+}
 
 
 
