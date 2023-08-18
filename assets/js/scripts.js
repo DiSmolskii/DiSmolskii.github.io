@@ -512,24 +512,6 @@ $(function () {
     $('.my-paroller').paroller();
 
 
-    // $('.start-anim').scroll(function () {
-
-    //     var target = $(this).scrollTop();
-
-    //     if (target == 0) {
-
-        
-    //         alert('message');
-
-    //     } else {
-
-    //         // Действие, если страница прокручена вниз
-    //         alert('message');
-    //     }
-
-    // });
-
-
     /* ========== magnificPopup ========== */
 
     $('.popup-img , .gallery').magnificPopup({

@@ -10142,6 +10142,10 @@ header.in-box {
   .product-details .overview .tab-content .add-review {
     padding: 40px 25px;
   }
+
+  .back-image {
+    height: 60vh;
+  }
 }
 
 /* ====================== [ End Responsive ] ====================== */
