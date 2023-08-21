@@ -63,6 +63,8 @@
     clip: rect(auto, auto, 90vh, auto);
 }
 
+
+
 /* Tap Beat
 -----------------------------------------------------------------*/
 .tapbeat-main-bg {
@@ -130,6 +132,57 @@
 
 .alias-loader-bg {
     fill: #6E0327 !important;
+}
+
+.alias-device{
+    border-radius: 20px; 
+    border: 4px solid #E4ECFF; 
+    overflow: hidden;
+}
+
+.butn-circle.alias-butn-circle-bg:after {
+    background: #EDF1FF;
+}
+
+.alias-hamenu {
+    background: #47001A;
+}
+
+.alias-main-color {
+    color: #BA1945;
+}
+
+.alias-hamenu .menu-links::-webkit-scrollbar-thumb {
+    background: #BA1945;
+}
+
+.alias-uikit-bg .swiper-slide .img {
+    background-color: #610222;
+}
+
+
+
+
+/* Miami-chill [mc]
+-----------------------------------------------------------------*/
+.mc-main-bg {
+    background-color: #071817;
+}
+
+.mc-dark-bg{
+    background-color: #1D8475;
+}
+
+.mc-white-bg {
+    background-color: #E4ECFF;
+}
+
+.call-action-img .-sec-bg::after {
+    background: #610222;
+}
+
+.mc-loader-bg {
+    fill: #20B9A0 !important;
 }
 
 .alias-device{
