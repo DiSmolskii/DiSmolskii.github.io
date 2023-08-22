@@ -507,10 +507,9 @@ $(function () {
     // });
 
 
-
-    if (window.matchMedia("(max-width: 767px)").matches) {
-        // Область просмотра имеет ширину менее 768 пикселей.
-
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ||
+   (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.platform))) {
+    // ...
     } else {
         // Область просмотра имеет ширину не менее 768 пикселей.
         $('.parallaxie').parallaxie({
@@ -518,7 +517,6 @@ $(function () {
             size: "cover",
         });
     }
-
 
 
 
