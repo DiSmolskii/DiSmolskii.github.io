@@ -501,10 +501,25 @@ $(function () {
 
     /* ========== parallaxie ========== */
 
-    $('.parallaxie').parallaxie({
-        speed: 0.8,
-        size: "cover"
-    });
+    // $('.parallaxie').parallaxie({
+    //     speed: 0.8,
+    //     size: "cover",
+    // });
+
+
+
+    if (window.matchMedia("(max-width: 767px)").matches) {
+        // Область просмотра имеет ширину менее 768 пикселей.
+
+    } else {
+        // Область просмотра имеет ширину не менее 768 пикселей.
+        $('.parallaxie').parallaxie({
+            speed: 0.8,
+            size: "cover",
+        });
+    }
+
+
 
 
     /* ========== paroller ========== */
