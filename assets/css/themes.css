@@ -328,3 +328,10 @@
     }
 
 }
+
+@media screen and (max-width: 480px) {
+    .lottie-bg {
+        width: 360%;
+    }
+
+}
