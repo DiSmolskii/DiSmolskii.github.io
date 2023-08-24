@@ -2782,6 +2782,7 @@ body.loaded {
 }
 
 .loader-wrap .loader-wrap-heading .load-text {
+  width: 320px;
   font-size: 20px;
   font-weight: 200;
   letter-spacing: 15px;
