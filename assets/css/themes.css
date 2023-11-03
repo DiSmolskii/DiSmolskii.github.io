@@ -19,8 +19,12 @@
     border-radius: 40px;
 }
 
-.txt-shadow{
+.txt-shadow {
     text-shadow: 0px 0px 64px rgba(0, 0, 0, 0.16);
+}
+
+.bs-6 {
+    border: 6px solid #ffffff;
 }
 
 
@@ -122,7 +126,7 @@
     background-color: #6E0327;
 }
 
-.alias-dark-bg{
+.alias-dark-bg {
     background-color: #610222;
 }
 
@@ -138,9 +142,9 @@
     fill: #6E0327 !important;
 }
 
-.alias-device{
-    border-radius: 20px; 
-    border: 4px solid #E4ECFF; 
+.alias-device {
+    border-radius: 20px;
+    border: 4px solid #E4ECFF;
     overflow: hidden;
 }
 
@@ -170,50 +174,123 @@
 /* Miami-chill [mc]
 -----------------------------------------------------------------*/
 .mc-main-bg {
-    background-color: #071817;
+    background-color: #002120;
 }
 
-.mc-dark-bg{
-    background-color: #1D8475;
+.mc-dark-bg {
+    background-color: #032726;
 }
 
 .mc-white-bg {
     background-color: #E4ECFF;
 }
 
-.call-action-img .-sec-bg::after {
-    background: #610222;
+.call-action-img .mc-sec-bg::after {
+    background: #032726;
 }
 
 .mc-loader-bg {
-    fill: #20B9A0 !important;
+    fill: #032726 !important;
 }
 
-.alias-device{
-    border-radius: 20px; 
-    border: 4px solid #E4ECFF; 
-    overflow: hidden;
+.butn-circle.mc-butn-circle-bg:after {
+    background: #13D7B7;
 }
 
-.butn-circle.alias-butn-circle-bg:after {
-    background: #EDF1FF;
+.mc-hamenu {
+    background: #032726;
 }
 
-.alias-hamenu {
-    background: #47001A;
+.mc-main-color {
+    color: #13D7B7;
 }
 
-.alias-main-color {
-    color: #BA1945;
+.mc-hamenu .menu-links::-webkit-scrollbar-thumb {
+    background: #13D7B7;
 }
 
-.alias-hamenu .menu-links::-webkit-scrollbar-thumb {
-    background: #BA1945;
+.mc-uikit-bg .swiper-slide .img {
+    background-color: #032726;
 }
 
-.alias-uikit-bg .swiper-slide .img {
-    background-color: #610222;
+.mc-showreel {
+     border-radius: 40px;
+     border: 6px solid #ffffff;
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-color: #032726;
 }
+
+.mc-skills .skill-item .item img {
+    filter: none;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+  }
+  
+
+
+.anim-container {
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 24px 24px 0px 24px;
+    align-items: center;
+}
+
+.anim-container:hover {
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    transition: 0.4s;
+}
+
+
+.mc-bgpattern-tasks {
+    background:
+        url("/assets/imgs/works/projects/miami-chill/graffiti-paint-1.svg") left 20px top 20px no-repeat,
+        url("/assets/imgs/works/projects/miami-chill/graffiti-elem-2.svg") right -40px center no-repeat;
+    background-size: 100px, 200px;
+}
+
+.mc-bgpattern-showreel {
+    background:
+        url("/assets/imgs/works/projects/miami-chill/graffiti-full-1.svg") center no-repeat,
+        url("/assets/imgs/works/projects/miami-chill/graffiti-paint-2.svg") right -40px top 60px no-repeat;
+    background-size: cover, 200px;
+}
+
+.mc-bgpattern-brand {
+    background:
+        url("/assets/imgs/works/projects/miami-chill/graffiti-elem-3.svg") left -40px top 60px no-repeat;
+    background-size: 200px;
+}
+
+.mc-bgpattern-uikit-info {
+    background:
+        url("/assets/imgs/works/projects/miami-chill/graffiti-paint-2.svg") left -60px top 20px no-repeat,
+        url("/assets/imgs/works/projects/miami-chill/graffiti-elem-4.svg") right -40px bottom 30px no-repeat;
+    background-size: 200px, 200px;
+}
+
+.mc-bgpattern-uikit-carousel {
+    background:
+        url("/assets/imgs/works/projects/miami-chill/graffiti-paint-2.svg") right -40px top 60px no-repeat;
+    background-size: 200px;
+}
+
+.mc-bgpattern-motion-info {
+    background:
+        url("/assets/imgs/works/projects/miami-chill/graffiti-elem-2.svg") left -20px top 40px no-repeat,
+        url("/assets/imgs/works/projects/miami-chill/graffiti-paint-1.svg") right 20px bottom 20px no-repeat;
+    background-size: 150px, 100px;
+}
+
+.mc-bgpattern-motion-anim {
+    background:
+        url("/assets/imgs/works/projects/miami-chill/graffiti-elem-3.svg") left 40px bottom 40px no-repeat;
+    background-size: 200px;
+}
+
 
 
 
@@ -223,9 +300,9 @@
 .uikit-team-crev .swiper-slide .item:hover .info {
     opacity: 1;
     visibility: visible;
-  }
+}
 
-  .uikit-team-crev .swiper-slide .item .info {
+.uikit-team-crev .swiper-slide .item .info {
     position: absolute;
     bottom: 0;
     height: 100%;
@@ -237,7 +314,7 @@
     -webkit-transition: all .4s;
     -o-transition: all .4s;
     transition: all .4s;
-  }
+}
 
 
 
