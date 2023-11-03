@@ -508,8 +508,8 @@ $(function () {
 
 
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ||
-   (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.platform))) {
-    // ...
+        (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.platform))) {
+        // ...
     } else {
         // Область просмотра имеет ширину не менее 768 пикселей.
         $('.parallaxie').parallaxie({
@@ -1309,7 +1309,39 @@ $(function () {
 
 
 
+/* =============================================================================
+   -----------------------------  Lottie Audio Functions  --------------------------------
+   ============================================================================= */
 
 
+function McStopAnimations(){ 
+
+    var lottiesMap = [
+        { key: 'animation_melodies_4', value: 'audio_melodies_4' },
+        { key: 'animation_vocal_4', value: 'audio_vocal_4' },
+        { key: 'animation_effect_5', value: 'audio_effect_5' },
+        { key: 'animation_beat_1', value: 'audio_beat_1' },
+        { key: 'animation_melodies_1', value: 'audio_melodies_1' },
+        { key: 'animation_vocal_3', value: 'audio_vocal_3' },
+        { key: 'animation_melodies_5', value: 'audio_melodies_5' },
+        { key: 'animation_beat_2', value: 'audio_beat_2' },
+    ];
+
+    for (var i = 0; i < lottiesMap.length; i++) {
+            var lottie_anim_element = document.getElementById(lottiesMap[i].key);
+            var lottie_audio_element = document.getElementById(lottiesMap[i].value);
+            lottie_audio_element.pause();
+            lottie_audio_element.currentTime = 0;
+            lottie_anim_element.stop();
+    }
+};
 
 
+function McPlayAnimation(lottie_anim, lottie_audio) {
+    McStopAnimations();
+    var lottie_audio_element = document.getElementById(lottie_audio);
+    var lottie_anim_element = document.getElementById(lottie_anim);
+    lottie_audio_element.play();
+    lottie_anim_element.play();
+
+}
