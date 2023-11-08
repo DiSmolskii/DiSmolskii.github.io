@@ -1313,6 +1313,7 @@ $(function () {
    -----------------------------  Lottie Audio Functions  --------------------------------
    ============================================================================= */
 
+/* Miami-chill [mc] ------------------------------------------*/
 
 function McStopAnimations(){ 
 
@@ -1339,6 +1340,41 @@ function McStopAnimations(){
 
 function McPlayAnimation(lottie_anim, lottie_audio) {
     McStopAnimations();
+    var lottie_audio_element = document.getElementById(lottie_audio);
+    var lottie_anim_element = document.getElementById(lottie_anim);
+    lottie_audio_element.play();
+    lottie_anim_element.play();
+
+}
+
+
+/* Magic-phonk [mf] ------------------------------------------*/
+
+function MfStopAnimations(){ 
+
+    var lottiesMap = [
+        { key: 'animation_melodies_1', value: 'audio_melodies_1' },
+        { key: 'animation_vocal_1', value: 'audio_vocal_1' },
+        { key: 'animation_effect_1', value: 'audio_effect_1' },
+        { key: 'animation_beat_4', value: 'audio_beat_4' },
+        { key: 'animation_melodies_2', value: 'audio_melodies_2' },
+        { key: 'animation_vocal_2', value: 'audio_vocal_2' },
+        { key: 'animation_effect_5', value: 'audio_effect_5' },
+        { key: 'animation_melodies_5', value: 'audio_melodies_5' },
+    ];
+
+    for (var i = 0; i < lottiesMap.length; i++) {
+            var lottie_anim_element = document.getElementById(lottiesMap[i].key);
+            var lottie_audio_element = document.getElementById(lottiesMap[i].value);
+            lottie_audio_element.pause();
+            lottie_audio_element.currentTime = 0;
+            lottie_anim_element.stop();
+    }
+};
+
+
+function MfPlayAnimation(lottie_anim, lottie_audio) {
+    MfStopAnimations();
     var lottie_audio_element = document.getElementById(lottie_audio);
     var lottie_anim_element = document.getElementById(lottie_anim);
     lottie_audio_element.play();
