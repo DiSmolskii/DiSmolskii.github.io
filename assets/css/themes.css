@@ -27,6 +27,15 @@
     border: 6px solid #ffffff;
 }
 
+.br-top-40 {
+    border-radius: 40px 40px 0px 0px;
+}
+
+.br-bottom-40 {
+    border-radius: 0px 0px 40px 40px;
+}
+
+
 
 /* Components code
 -----------------------------------------------------------------*/
@@ -69,6 +78,35 @@
     width: 100%;
     top: 0;
     clip: rect(auto, auto, 90vh, auto);
+}
+
+.anim-container {
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 16px 16px 0px 16px;
+    align-items: center;
+}
+
+.anim-container:hover {
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    transition: 0.4s;
+}
+
+.mb-skills .skill-item .item img {
+    filter: none;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+}
+
+.mb-showreel {
+    border-radius: 40px;
+    border: 6px solid #ffffff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #032726;
 }
 
 
@@ -213,37 +251,8 @@
     background-color: #032726;
 }
 
-.mc-showreel {
-     border-radius: 40px;
-     border: 6px solid #ffffff;
-     background-size: cover;
-     background-position: center;
-     background-repeat: no-repeat;
-     background-color: #032726;
-}
 
-.mc-skills .skill-item .item img {
-    filter: none;
-    -webkit-transition: all .4s;
-    -o-transition: all .4s;
-    transition: all .4s;
-  }
   
-
-
-.anim-container {
-    position: relative;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 16px 16px 0px 16px;
-    align-items: center;
-}
-
-.anim-container:hover {
-    cursor: pointer;
-    border: 1px solid rgba(255, 255, 255, 0.9);
-    transition: 0.4s;
-}
-
 
 .mc-bgpattern-tasks {
     background:
@@ -290,6 +299,103 @@
         url("/assets/imgs/works/projects/miami-chill/graffiti-elem-3.svg") left 40px bottom 40px no-repeat;
     background-size: 200px;
 }
+
+
+/* Magic-phonk [mf]
+-----------------------------------------------------------------*/
+.mf-main-bg {
+    background-color: #1f1046;
+}
+
+.mf-dark-bg {
+    background-color: #261550;
+}
+
+.mc-white-bg {
+    background-color: #E4ECFF;
+}
+
+.call-action-img .mf-sec-bg::after {
+    background: #261550;
+}
+
+.mf-loader-bg {
+    fill: #261550 !important;
+}
+
+.butn-circle.mf-butn-circle-bg:after {
+    background: #89FF00;
+}
+
+.mf-hamenu {
+    background: #261550;
+}
+
+.mf-main-color {
+    color: #89FF00;
+}
+
+.mf-hamenu .menu-links::-webkit-scrollbar-thumb {
+    background: #89FF00;
+}
+
+.mf-uikit-bg .swiper-slide .img {
+    background-color: #261550;
+}
+
+
+
+.mf-bgpattern-tasks {
+    background:
+        url("/assets/imgs/works/projects/magic-phonk/graffiti-elem-1.svg") left -20px top 10px no-repeat,
+        url("/assets/imgs/works/projects/magic-phonk/graffiti-elem-2.svg") right -40px center no-repeat;
+    background-size: 250px, 250px;
+}
+
+.mf-bgpattern-showreel {
+    background:
+        url("/assets/imgs/works/projects/magic-phonk/graffiti-full-1.svg") center no-repeat;
+    background-size: cover;
+}
+
+.mf-bgpattern-brand {
+    background:
+        url("/assets/imgs/works/projects/magic-phonk/graffiti-elem-3.svg") right 20px top 20px no-repeat,
+        url("/assets/imgs/works/projects/magic-phonk/graffiti-elem-4.svg") left -10px bottom 40px no-repeat;
+    background-size: 250px, 200px;
+}
+
+.mf-bgpattern-uikit-info {
+    background:
+        url("/assets/imgs/works/projects/magic-phonk/graffiti-elem-2.svg") left -60px top 20px no-repeat;
+    background-size: 250px;
+}
+
+.mf-bgpattern-uikit-carousel {
+    background:
+        url("/assets/imgs/works/projects/magic-phonk/graffiti-elem-3.svg") right -40px top 20px no-repeat;
+    background-size: 200px;
+}
+
+.mf-uiux {
+    background:
+        url("/assets/imgs/works/projects/magic-phonk/graffiti-elem-4.svg") left 4px bottom 40px no-repeat;
+    background-size: 200px;
+    background-color: #261550;
+}
+
+.mf-bgpattern-motion-info {
+    background:
+        url("/assets/imgs/works/projects/magic-phonk/graffiti-elem-5.svg") left 10px bottom 40px no-repeat;
+    background-size: 250px;
+}
+
+.mf-bgpattern-motion-anim {
+    background:
+        url("/assets/imgs/works/projects/magic-phonk/graffiti-elem-1.svg") right 40px bottom 40px no-repeat;
+    background-size: 200px;
+}
+
 
 
 
@@ -409,5 +515,37 @@
 @media screen and (max-width: 480px) {
     .lottie-bg {
         width: 280%;
+    }
+
+    /* Magic-phonk [mf]
+    -----------------------------------------------------------------*/
+
+    .mf-bgpattern-tasks {
+        background-size: 100px, 200px;
+    }
+    
+    
+    .mf-bgpattern-brand {
+        background-size: 150px, 200px;
+    }
+    
+    .mf-bgpattern-uikit-info {
+        background-size: 150px;
+    }
+    
+    .mf-bgpattern-uikit-carousel {
+        background-size: 150px;
+    }
+    
+    .mf-uiux {
+        background-size: 150px;
+    }
+    
+    .mf-bgpattern-motion-info {
+        background-size: 150px;
+    }
+    
+    .mf-bgpattern-motion-anim {
+        background-size: 150px;
     }
 }
