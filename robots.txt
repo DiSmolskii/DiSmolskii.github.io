@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /errors
+
+Disallow: /index.php$
+Disallow: /index.html$
