@@ -42,13 +42,13 @@ RewriteRule .* - [F]
 ############################################################################
 
 #401 Авторизация не выполнена
-ErrorDocument 401 errors/401.html
+ErrorDocument 401 errors/index.html
 #403 Доступ запрещен
-ErrorDocument 403 errors/403.html
+ErrorDocument 403 errors/index.html
 #404 Страница не найдена
-ErrorDocument 404 errors/404.html
+ErrorDocument 404 errors/index.html
 #500 Внутренняя ошибка сервера
-ErrorDocument 500 errors/500.html
+ErrorDocument 500 errors/index.html
 
 
 
